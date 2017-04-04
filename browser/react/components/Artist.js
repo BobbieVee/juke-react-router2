@@ -22,7 +22,9 @@ class Artist extends React.Component{
 		    isPlaying: this.props.isPlaying,
 		    toggleOne: this.props.toggleOne,
 		    selectedArtist: this.props.selectedArtist,
-		    songs: this.props.selectedArtist.songs
+		    songs: this.props.selectedArtist.songs,
+		    albums: this.props.selectedArtist.albums,
+		    selectAlbum: this.props.selectAlbum
 		}		
 		const artist = this.props.selectedArtist; 
 		return (
