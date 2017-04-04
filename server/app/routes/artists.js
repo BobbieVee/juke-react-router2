@@ -33,7 +33,10 @@ router.get('/:artistId', function (req, res) {
 
 router.get('/:artistId/albums', function (req, res, next) {
   req.artist.getAlbums() // instance method, check it out in the model
-  .then(albums => res.json(albums))
+  .then(albums => {
+    console.log('artist album route')
+    res.json(albums);
+  })
   .catch(next);
 });
 
